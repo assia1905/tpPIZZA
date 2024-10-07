@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TP Pizza</string>
+    <string name="pizza_image_desc">Image du logo de la pizza</string>
+</resources>

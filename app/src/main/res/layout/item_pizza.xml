@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <!-- ImageView pour l'image de la pizza à gauche -->
+    <ImageView
+        android:id="@+id/pizza_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Pizza Image" />
+
+    <!-- Conteneur vertical pour le nom, la durée et le nombre d'ingrédients -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center_vertical">
+
+        <!-- Nom de la pizza -->
+        <TextView
+            android:id="@+id/pizza_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pizza Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Durée de la pizza -->
+        <TextView
+            android:id="@+id/pizza_duree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Durée: 20 min"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Nombre d'ingrédients -->
+        <TextView
+            android:id="@+id/pizza_nbr_ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingrédients: 5"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+</LinearLayout>

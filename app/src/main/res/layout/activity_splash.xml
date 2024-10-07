@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_error"> <!-- Couleur de fond blanche -->
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon" /> <!-- Remplacez par le nom de votre logo -->
+
+
+    <TextView
+        android:id="@+id/logo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_image"
+        android:layout_marginStart="160dp"
+        android:text="Pizza"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textStyle="italic" /> <!-- Placez-le sous l'ImageView -->
+    <TextView
+        android:id="@+id/logo_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_text"
+        android:layout_marginStart="150dp"
+        android:text="Make Your Pizza "
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="italic" /> <!-- Placez-le sous l'ImageView -->
+</RelativeLayout>
+
